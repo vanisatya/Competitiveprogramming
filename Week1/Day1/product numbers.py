@@ -8,7 +8,7 @@ def get_products_of_all_ints_except_at_index(int_list):
         product*= int_list[i]
     product = 1
     for i in xrange(len(int_list) - 1, -1, -1):
-        products*= product
+        products[i]*= product
         product*= int_list[i]
 
     return products
